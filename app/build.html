@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Red Hot Chili Builer</title>
+
+    <link rel="canonical" href="https://chili.redbuilder.io" />
+
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="googlebot-news" content="noindex, nofollow" />
+    <meta name="googlebot-image" content="noindex, nofollow" />
+    <meta name="googlebot-video" content="noindex, nofollow" />
+    <meta name="googlebot-mobile" content="noindex, nofollow" />
+
+    <meta name="language" content="en" />
+    <meta name="country" content="ZA" />
+    <meta name="geo.country" content="ZA" />
+    <meta name="geo.placename" content="Johannesburg" />
+    <meta name="geo.region" content="Gauteng" />
+    <meta name="geo.position" content="-26.2041;28.0473" />
+    <meta name="ICBM" content="-26.2041, 28.0473" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Red🌶️Chili" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Red🌶️Chili" />
+
+    <link rel="apple-touch-icon" href="icons/build.png" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <link rel="apple-touch-startup-image" href="icons/build.png" />
+    <link rel="icon" href="build.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/build.png" />
+
+    <meta name="Author" content="Martin Myburgh" />
+    <meta name="Copyright" content="MIT License" />
+    <meta name="Keywords"
+        content="Audio, Music, Video, Playlist, Streaming, Online, Best, Popular, Deezer, Spotify, YouTubeMusic, YouTube, Playlist, Free, PWA, Apple, Android, iOS, Windows, Podcast, Vibescout, Event, Social" />
+    <meta name="Subject" content="Red Builder - Red🌶️Chili" />
+    <meta name="Description"
+        content="Red Builder: Red🌶️Chili Edition – Unleash Your Digital Creativity! In the dynamic world of social media marketing, YouTube content creation, and the music industry, your digital presence is your powerhouse. Red Builder is here to revolutionize the way you connect with your audience. With our intuitive app builder, anyone can craft stunning, progressive web apps in a snap – no coding skills required at all! Whether you are an influencer, a musician, or a marketing maven, Red Builder empowers you to create engaging, professional apps that resonate with your brand and your audience. Dive into the digital era with Red Builder and transform your online presence, a captivating experience!" />
+
+    <meta property="og:url" content="https://chili.redbuilder.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Red Builder - Red🌶️Chili" />
+    <meta property="og:description" content="Hot like🌶️chili cool as ice" />
+    <meta property="og:image" content="https://chili.redbuilder.io/icons/icon.png" />
+    <meta property="og:site_name" content="Red🌶️Chili" />
+
+    <meta property="og:locale" content="en_ZA" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@chili" />
+    <meta name="twitter:creator" content="@chili" />
+    <meta name="twitter:title" content="Red Builder - Red🌶️Chili" />
+    <meta name="twitter:description" content="Hot like🌶️chili cool as ice" />
+    <meta name="twitter:image" content="https://chili.redbuilder.io/icons/icon.png" />
+    <meta name="twitter:image:alt" content="Red🌶️Chili" />
+    <meta name="twitter:domain" content="chili.redbuilder.io" />
+    <meta name="twitter:app:name:iphone" content="Red🌶️Chili" />
+    <meta name="twitter:app:name:ipad" content="Red🌶️Chili" />
+    <meta name="twitter:app:name:googleplay" content="Red🌶️Chili" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #161c30;
+            font-family: 'Arial', sans-serif;
+            padding: 5% 10%;
+        }
+
+        .container {
+            background: #ffe0e0;
+            border-radius: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-top: 40px;
+        }
+
+        h1 {
+            color: #050a30;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #050a30;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #050a30;
+        }
+
+        .btn-primary {
+            background-color: #050a30;
+            border-color: #050a30;
+        }
+
+        .btn-primary:hover {
+            background-color: #050a30a8;
+            border-color: #050a30a8;
+        }
+
+        .form-control {
+            border-radius: 4px;
+        }
+
+        .url-input-container {
+            margin-bottom: 20px;
+        }
+
+        .preview-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .mobile-preview {
+            display: inline-block;
+        }
+
+        .modal-backdrop {
+            background: transparent;
+        }
+
+        .modal-content {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
+
+        .modal-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .close-button span {
+            font-size: 20px;
+            line-height: 20px;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Gooey Parameters</h2>
+        <form id="parameterForm">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" name="title" value="Red🌶️Chili" required>
+            </div>
+            <div class="form-group">
+                <label for="statusbar">Status Bar Option:</label>
+                <select class="form-control" id="statusbar" name="statusbar" value="black">
+                    <option value="black">Black</option>
+                    <option value="black-translucent">Black Translucent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ogurl">OG URL:</label>
+                <input type="url" class="form-control" id="ogurl" name="ogurl" value="https://chili.redbuilder.io"
+                    required pattern="https?://.+">
+            </div>
+            <div class="form-group">
+                <label for="ogtitle">OG Title:</label>
+                <input type="text" class="form-control" id="ogtitle" name="ogtitle" value="Red🌶️Chili" required>
+            </div>
+            <div class="form-group">
+                <label for="ogdescription">OG Description:</label>
+                <input type="text" class="form-control" id="ogdescription" name="ogdescription"
+                    value="Hot like 🌶️chili cool as ice" required>
+            </div>
+            <div class="form-group">
+                <label for="ogsitename">OG Site Name:</label>
+                <input type="text" class="form-control" id="ogsitename" name="ogsitename" value="Red🌶️Chili" required>
+            </div>
+            <div class="form-group">
+                <label for="keywords">Keywords:</label>
+                <input type="text" class="form-control" id="keywords" name="keywords"
+                    value="Audio, Music, Video, Playlist, Streaming, Online, Best, Popular, Deezer, Spotify, YouTubeMusic, YouTube, Playlist, Free, PWA, Apple, Android, iOS, Windows, Podcast, Vibescout, Event, Social"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="subject" name="subject" value="Red🌶️Chili" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" class="form-control" id="description" name="description"
+                    value="Red Builder: Red🌶️Chili Edition – Unleash Your Digital Creativity! In the dynamic world of social media marketing, YouTube content creation, and the music industry, your digital presence is your powerhouse. Red Builder is here to revolutionize the way you connect with your audience. With our intuitive app builder, anyone can craft stunning, progressive web apps in a snap – no coding skills required at all! Whether you are an influencer, a musician, or a marketing maven, Red Builder empowers you to create engaging, professional apps that resonate with your brand and your audience. Dive into the digital era with Red Builder and transform your online presence, a captivating experience!"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="frame1url">Page 1 URL:</label>
+                <input type="text" class="form-control" id="frame1url" name="frame1url" value="https://redbuilder.dev"
+                    required>
+                <button class="btn btn-primary mt-2" type="button" onclick="previewURL('frame1url')">Preview</button>
+            </div>
+            <div class="form-group">
+                <label for="frame2url">Page 2 URL:</label>
+                <input type="text" class="form-control" id="frame2url" name="frame2url"
+                    value="https://www.canva.com/design/DAF2E2zqxEw/view" required>
+                <button class="btn btn-primary mt-2" type="button" onclick="previewURL('frame2url')">Preview</button>
+            </div>
+            <div class="form-group">
+                <label for="frame3url">Page 3 URL:</label>
+                <input type="text" class="form-control" id="frame3url" name="frame3url"
+                    value="https://www.canva.com/design/DAF2_pyrqh0/watch" required>
+                <button class="btn btn-primary mt-2" type="button" onclick="previewURL('frame3url')">Preview</button>
+            </div>
+            <div class="form-group">
+                <label for="frame4url">Page 4 URL:</label>
+                <input type="text" class="form-control" id="frame4url" name="frame4url" value="https://yt.xxlxx.co/play/0"
+                    required>
+                <button class="btn btn-primary mt-2" type="button" onclick="previewURL('frame4url')">Preview</button>
+            </div>
+            <div class="form-group">
+                <label for="frame5url">Page 5 URL:</label>
+                <input type="text" class="form-control" id="frame5url" name="frame5url"
+                    value="https://theradio.fm/pages/dash.html" required>
+                <button class="btn btn-primary mt-2" type="button" onclick="previewURL('frame5url')">Preview</button>
+            </div>
+            <div class="form-group">
+                <label for="bgcolour1">Background Color 1:</label>
+                <input type="color" class="form-control" id="bgcolour1" name="bgcolour1" value="#ff1c1c" required>
+            </div>
+            <div class="form-group">
+                <label for="bgcolour2">Background Color 2:</label>
+                <input type="color" class="form-control" id="bgcolour2" name="bgcolour2" value="#ff1c1c" required>
+            </div>
+            <div class="form-group">
+                <label for="bgcolour3">Background Color 3:</label>
+                <input type="color" class="form-control" id="bgcolour3" name="bgcolour3" value="#ff1c1c" required>
+            </div>
+            <div class="form-group">
+                <label for="bgcolour4">Background Color 4:</label>
+                <input type="color" class="form-control" id="bgcolour4" name="bgcolour4" value="#ff1c1c" required>
+            </div>
+            <div class="form-group">
+                <label for="bgcolour5">Background Color 5:</label>
+                <input type="color" class="form-control" id="bgcolour5" name="bgcolour5" value="#ff1c1c" required>
+            </div>
+            <div class="form-group">
+                <label for="bgmenu">Background Menu Color:</label>
+                <input type="color" class="form-control" id="bgmenu" name="bgmenu" value="#1d1d27" required>
+            </div>
+            <div class="form-group">
+                <label for="stroke">Stroke:</label>
+                <input type="color" class="form-control" id="stroke" name="stroke" value="#ffffff" required>
+            </div>
+            <div class="form-group">
+                <label for="bodybgcolor">Body Background Color:</label>
+                <input type="color" class="form-control" id="bodybgcolor" name="bodybgcolor" value="#1d1d27" required>
+            </div>
+            <div class="form-group">
+                <label for="bodycolor">Body Color:</label>
+                <input type="color" class="form-control" id="bodycolor" name="bodycolor" value="#ce0000" required>
+            </div>
+            <div class="form-group">
+                <label for="statusbgcolor">Status Background Color:</label>
+                <input type="color" class="form-control" id="statusbgcolor" name="statusbgcolor" value="#1d1d27"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="statuscolor">Status Color:</label>
+                <input type="color" class="form-control" id="statuscolor" name="statuscolor" value="#ce0000" required>
+            </div>
+            <div class="form-group">
+                <label for="pwaname">PWA Name:</label>
+                <input type="text" class="form-control" id="pwaname" name="pwaname" value="Red🌶️Chili" required>
+            </div>
+            <div class="form-group">
+                <label for="pwashortname">PWA Short Name:</label>
+                <input type="text" class="form-control" id="pwashortname" name="pwashortname" value="Red🌶️Chili"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="pwadescription">PWA Description:</label>
+                <input type="text" class="form-control" id="pwadescription" name="pwadescription"
+                    value="Red Builder: Red🌶️Chili Edition – Unleash Your Digital Creativity! In the dynamic world of social media marketing, YouTube content creation, and the music industry, your digital presence is your powerhouse. Red Builder is here to revolutionize the way you connect with your audience. With our intuitive app builder, anyone can craft stunning, progressive web apps in a snap – no coding skills required at all! Whether you are an influencer, a musician, or a marketing maven, Red Builder empowers you to create engaging, professional apps that resonate with your brand and your audience. Dive into the digital era with Red Builder and transform your online presence, a captivating experience!"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="pwatheme">PWA Theme Color:</label>
+                <input type="color" class="form-control" id="pwatheme" name="pwatheme" value="#ce0000" required>
+            </div>
+            <div class="form-group">
+                <label for="pwabackground">PWA Background Color:</label>
+                <input type="color" class="form-control" id="pwabackground" name="pwabackground" value="#1d1d27"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="pwadisplay">PWA Display:</label>
+                <select class="form-control" id="pwadisplay" name="pwadisplay" value="standalone" required>
+                    <option value="standalone">Standalone</option>
+                    <option value="fullscreen">Fullscreen</option>
+                    <option value="minimal-ui">Minimal UI</option>
+                    <option value="browser">Browser</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pwaorientation">PWA Orientation:</label>
+                <select class="form-control" id="pwaorientation" name="pwaorientation" value="portrait" required>
+                    <option value="portrait">Portrait</option>
+                    <option value="portrait-primary">Portrait Primary</option>
+                    <option value="portrait-secondary">Portrait Secondary</option>
+                    <option value="landscape">Landscape</option>
+                    <option value="landscape-primary">Landscape Primary</option>
+                    <option value="landscape-secondary">Landscape Secondary</option>
+                    <option value="natural">Natural</option>
+                    <option value="any">Any</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pwastarturl">PWA Start URL:</label>
+                <input type="text" class="form-control" id="pwastarturl" name="pwastarturl" value="/" required>
+            </div>
+            <div class="form-group">
+                <label for="pwanavigation">PWA Navigation:</label>
+                <select class="form-control" id="pwanavigation" name="pwanavigation" value="standalone" required>
+                    <option value="standalone">Standalone</option>
+                    <option value="minimal-ui">Minimal UI</option>
+                    <option value="browser">Browser</option>
+                    <option value="fullscreen">Fullscreen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="androidid">Android ID:</label>
+                <input type="text" class="form-control" id="androidid" name="androidid" value="com.canva.editor"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="pwashortcuts">PWA Shortcuts:</label>
+                <input type="text" class="form-control" id="pwashortcuts" name="pwashortcuts" value="">
+            </div>
+            <div class="form-group">
+                <label for="pwadisplayoverride">PWA Display Override:</label>
+                <input type="text" class="form-control" id="pwadisplayoverride" name="pwadisplayoverride"
+                    value="fullscreen" required>
+            </div>
+            <div class="form-group">
+                <label for="pwacategories">PWA Categories:</label>
+                <input type="text" class="form-control" id="pwacategories" name="pwacategories" value="lifestyle"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="pwascopes">PWA Scopes:</label>
+                <input type="text" class="form-control" id="pwascopes" name="pwascopes" value="/" required>
+            </div>
+            <div class="form-group">
+                <label for="pwaicons">PWA Icons:</label>
+                <input type="text" class="form-control" id="pwaicons" name="pwaicons" value="icons/icon.png" required>
+            </div>
+            <!--<div class="form-group">
+                <label for="pwasharetarget">PWA Share Target:</label>
+                <input type="text" class="form-control" id="pwasharetarget" name="pwasharetarget" value="share.html"
+                    required>-->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Generate</button>
+                <button type="button" class="btn btn-success" id="launchButton">Launch</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="mobilePreviewContainer"></div>
+                    <button type="button" class="close-button" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="build.js"></script>
+    <script src="mobile-preview.js"></script>
+    <script>
+        function previewURL(inputId) {
+            const url = document.getElementById(inputId).value;
+            const container = document.getElementById('mobilePreviewContainer');
+
+            // Remove any existing mobile-preview element
+            while (container.firstChild) {
+                container.removeChild(container.firstChild);
+            }
+
+            // Create a new mobile-preview element
+            const newMobilePreview = document.createElement('mobile-preview');
+            newMobilePreview.id = 'mobilePreview';
+            newMobilePreview.classList.add('mobile-preview');
+            newMobilePreview.setAttribute('url', url);
+
+            // Append the new mobile-preview element to the container
+            container.appendChild(newMobilePreview);
+
+            $('#previewModal').modal('show');
+        }
+
+        $('#previewModal').on('hidden.bs.modal', function () {
+            // Clear the mobilePreviewContainer when the modal is closed
+            const container = document.getElementById('mobilePreviewContainer');
+            while (container.firstChild) {
+                container.removeChild(container.firstChild);
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('launchButton').addEventListener('click', function () {
+            // Define the base URL
+            var baseUrl = '/index.html';
+
+            // Open the base URL in a new tab or window
+            //window.open(baseUrl, '_blank');
+            window.open(baseUrl, '_parent');
+
+            // Replace the current window's content with the new URL
+            //window.location.href = baseUrl;
+
+            //location.reload();
+
+            // This will reload the same URL
+            // window.location.reload();
+        });
+    </script>
+</body>
+
+</html>
