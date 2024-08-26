@@ -11,3 +11,4 @@ npm-debug.log
 yarn-error.log
 /node_modules/
 /out/
+.DS_Store
